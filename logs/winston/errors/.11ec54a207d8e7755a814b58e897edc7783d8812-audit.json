@@ -44,6 +44,41 @@
             "date": 1686380604602,
             "name": "D:\\PROGRAMMING HERO\\NEXT LEVEL\\MODULES\\university-management-backend\\logs\\winston\\errors\\phu-2023-10-06-13-error.log",
             "hash": "814b126a151b05998cbae11444a2a29476c03d188c880b5218e190e7cb9231c6"
+        },
+        {
+            "date": 1686402389511,
+            "name": "D:\\PROGRAMMING HERO\\NEXT LEVEL\\MODULES\\university-management-backend\\logs\\winston\\errors\\phu-2023-10-06-19-error.log",
+            "hash": "4aa22ade755638a07593e88de38a4bf592fffb34f92ac42b8370b0a5dd04a0ee"
+        },
+        {
+            "date": 1686406554904,
+            "name": "D:\\PROGRAMMING HERO\\NEXT LEVEL\\MODULES\\university-management-backend\\logs\\winston\\errors\\phu-2023-10-06-20-error.log",
+            "hash": "33616ba6a3b906dfd8a2e02f9ef555c27f0053b5ce354def884d3b3f9e60effb"
+        },
+        {
+            "date": 1686409349854,
+            "name": "D:\\PROGRAMMING HERO\\NEXT LEVEL\\MODULES\\university-management-backend\\logs\\winston\\errors\\phu-2023-10-06-21-error.log",
+            "hash": "5556d6b1035354d1493f456343a9592379be0fc5b54379f1478f25f120c487e0"
+        },
+        {
+            "date": 1686412807749,
+            "name": "D:\\PROGRAMMING HERO\\NEXT LEVEL\\MODULES\\university-management-backend\\logs\\winston\\errors\\phu-2023-10-06-22-error.log",
+            "hash": "a996841e2ce30f86c194623e875fd4625f6c5722822caf38fc1eb20f33076218"
+        },
+        {
+            "date": 1686416521905,
+            "name": "D:\\PROGRAMMING HERO\\NEXT LEVEL\\MODULES\\university-management-backend\\logs\\winston\\errors\\phu-2023-10-06-23-error.log",
+            "hash": "e299d34c9eec162e487bb9db98cdf39dcf57d50fff487b103357e6b1b2de732c"
+        },
+        {
+            "date": 1686420260483,
+            "name": "D:\\PROGRAMMING HERO\\NEXT LEVEL\\MODULES\\university-management-backend\\logs\\winston\\errors\\phu-2023-11-06-00-error.log",
+            "hash": "337b1612e9ee990f742585d020c815e97d92acbb6959a03de810963c33cf6cb9"
+        },
+        {
+            "date": 1686424112377,
+            "name": "D:\\PROGRAMMING HERO\\NEXT LEVEL\\MODULES\\university-management-backend\\logs\\winston\\errors\\phu-2023-11-06-01-error.log",
+            "hash": "21c615a5ab8c926b8d200dc1949bcbb9910138df05ed123d935819336415ed85"
         }
     ],
     "hashType": "sha256"

@@ -19,7 +19,7 @@ const academicSemesterSchema = new Schema<IacademicSemester>(
       enum: academicSemesterTitles,
     },
     year: {
-      type: Number,
+      type: String,
       required: true,
     },
     code: {
@@ -44,20 +44,20 @@ const academicSemesterSchema = new Schema<IacademicSemester>(
 );
 
 academicSemesterSchema.pre('save', async function name(next) {
-  const isExist = await academicSemester.findOne({
+  const isExist = await AcademicSemester.findOne({
     title: this.title,
     year: this.year,
   });
   if (isExist) {
     throw new ApiError(
       httpStatus.CONFLICT,
-      'Ihis academic semister is already exist in this year.'
+      'This academic semister is already exist in this year.'
     );
   }
   next();
 });
 
-export const academicSemester = model<IacademicSemester, AcademicSemesterModel>(
+export const AcademicSemester = model<IacademicSemester, AcademicSemesterModel>(
   'academicSemester',
   academicSemesterSchema
 );
