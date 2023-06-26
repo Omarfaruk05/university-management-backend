@@ -1,5 +1,6 @@
 import express, { Application, NextFunction, Request, Response } from 'express';
 import cors from 'cors';
+import cookieParser from 'cookie-parser';
 const app: Application = express();
 
 import globalErrorHandler from './app/middlewares/globalErrorHandlers';
@@ -7,6 +8,7 @@ import routes from './app/routes';
 import httpStatus from 'http-status';
 
 app.use(cors());
+app.use(cookieParser());
 
 //parser
 app.use(express.json());
@@ -37,6 +39,17 @@ app.use(async (req: Request, res: Response, next: NextFunction) => {
   });
   next();
 });
+// const academicSemester = {
+//   code: '01',
+//   year: '2025',
+// };
+
+// const testId = async () => {
+//   const testId = await generateFacultyId();
+//   console.log(testId);
+// };
+
+// testId();
 
 export default app;
 

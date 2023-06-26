@@ -11,7 +11,10 @@ import {
 import ApiError from '../../../errors/ApiError';
 import httpStatus from 'http-status';
 
-const academicSemesterSchema = new Schema<IacademicSemester>(
+const academicSemesterSchema = new Schema<
+  IacademicSemester,
+  AcademicSemesterModel
+>(
   {
     title: {
       type: String,
@@ -58,6 +61,6 @@ academicSemesterSchema.pre('save', async function name(next) {
 });
 
 export const AcademicSemester = model<IacademicSemester, AcademicSemesterModel>(
-  'academicSemester',
+  'AcademicSemester',
   academicSemesterSchema
 );
