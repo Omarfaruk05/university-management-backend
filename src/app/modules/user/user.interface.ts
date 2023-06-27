@@ -11,12 +11,20 @@ export type IUser = {
   admin?: Types.ObjectId | IAdmin;
 };
 
-export type IUserMethods = {
-  isUserExist(id: string): Promise<Partial<IUser> | null>;
-  isPasswordMathced(
+// export type IUserMethods = {
+//   isUserExist(id: string): Promise<Partial<IUser> | null>;
+//   isPasswordMathced(
+//     givenPassword: string,
+//     savedPassword: string
+//   ): Promise<boolean>;
+// };
+
+export type UserModel = {
+  isUserExist(
+    id: string
+  ): Promise<Pick<IUser, 'id' | 'password' | 'role' | 'needsPasswordChange'>>;
+  isPasswordMatched(
     givenPassword: string,
     savedPassword: string
   ): Promise<boolean>;
-};
-
-export type UserModel = Model<IUser, Record<string, unknown>, IUserMethods>;
+} & Model<IUser>;
